@@ -1,0 +1,54 @@
+# Atividades Extras: Gerador de Rifas e Jogo Jokempô
+
+Este repositório contém o desenvolvimento de duas aplicações web interativas utilizando **PHP Estruturado**, com foco em manipulação de formulários, laços de repetição, funções customizadas e estilização dinâmica por meio de CSS e elementos visuais (como GIFs).
+
+---
+
+## 🛠️ Conceitos Praticados
+
+* **Manipulação e Upload de Arquivos:** Captura de imagens via formulário com `enctype="multipart/form-between"` e codificação segura em Base64 para exibição imediata.
+* **Formatação de Strings:** Uso da função `str_pad()` para preenchimento de zeros à esquerda em numerações ordinais.
+* **Geração Aleatória (I.A. Simples):** Uso de `rand()` para simular as jogadas de um oponente controlado pelo computador.
+* **Modularização:** Criação de funções customizadas no PHP para isolar regras de negócio e testar combinações de lógica de forma organizada.
+* **CSS Dinâmico e Impressão:** Uso de variáveis visuais baseadas no resultado do jogo e implementação de regras `@media print` para ocultar elementos do formulário ao imprimir.
+
+---
+
+## 📂 Estrutura das Atividades
+
+### Atividade 1: Gerador de Rifas em PHP (`gerador_rifa.php`)
+Um sistema automatizado para gerar bilhetes de rifa numerados prontos para impressão.
+* **Regras de Validação:** Limita a quantidade de bilhetes estritamente entre 50 e 500 unidades.
+* **Formatação Visual:** Formata os bilhetes automaticamente no padrão `001`, `002`, até `N`.
+* **Customização:** Permite definir título da campanha, prêmios, valor do bilhete, data do sorteio e upload opcional da imagem do prêmio.
+* **Canhoto Organizador:** Divide o bilhete em duas partes (Canhoto do vendedor e Corpo do comprador) usando bordas tracejadas.
+
+### Atividade 2: Jogo do Jokempô em PHP (`jokempo.php`)
+O clássico jogo de "Pedra, Papel ou Tesoura" contra o computador.
+* **Jogabilidade:** O usuário submete sua escolha clicando nos botões interativos de emoji.
+* **Lógica de Decisão:** O código processa um switch-case avaliando as 9 combinações possíveis para determinar Vitória, Derrota ou Empate.
+* **Feedback Visual:** Altera a cor do bloco de resultado dinamicamente e exibe um GIF animado correspondente ao estado final da partida.
+
+---
+
+## 🚀 Como Executar o Projeto
+
+1. Certifique-se de ter um ambiente de servidor local ativo (ex: **XAMPP**, **Laragon** ou **WampServer**).
+2. Mova os dois arquivos (`gerador_rifa.php` e `jokempo.php`) para o diretório raiz público do servidor (`htdocs` ou `www`).
+3. Certifique-se de que o módulo **Apache** está iniciado.
+4. Abra o navegador de sua preferência e navegue até as URLs correspondentes:
+   * **Para a Rifa:** `http://localhost/nome-da-sua-pasta/gerador_rifa.php`
+   * **Para o Jogo:** `http://localhost/nome-da-sua-pasta/jokempo.php`
+
+---
+
+## 📝 Recursos Utilizados
+
+* **PHP 8.x** para processamento, lógica de jogo e geração de loops.
+* **HTML5** para construção de interfaces e elementos de formulário.
+* **CSS3** para o design responsivo das cartelas de rifas e estilização da arena do jogo.
+
+---
+
+## Autor
+Esses arquivos foram feitos pelo aluno Maicon Ferreira Machado - ULBRA São Lucas, Módulo 3.
